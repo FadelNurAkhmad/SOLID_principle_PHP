@@ -41,9 +41,9 @@ class Age{
         $dob = new DateTime($data['dob']);
         $today = new Datetime(date('d.m.y'));
         return [
-            'year' => $today->diff($dob)->y,
-            'month' => $today->diff($dob)->m,
-            'day' => $today->diff($dob)->d,
+            'tahun' => $today->diff($dob)->y,
+            'bulan' => $today->diff($dob)->m,
+            'hari' => $today->diff($dob)->d,
         ];
     }
 }
